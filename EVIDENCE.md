@@ -1,6 +1,6 @@
 # 证据链：上游 `pojia-next` 的「开源 → 撤源码 → 改口径 → 收费」时间线
 
-> 抓取方式：GitHub REST API `GET /repos/z91772524-ai/pojia-next/commits?per_page=100`，共 112 条提交，逐条落表。
+> 抓取方式：GitHub REST API `GET /repos/z91772524-ai/pojia-next/commits?per_page=100&page=1..2`，共 112 条提交，逐条落表。
 > 抓取时间：2026-10-29 23:20（UTC+8）。时间一律给北京时间（UTC+8），括号内为 API 原始 UTC 时间。
 > 仓库地址：https://github.com/z91772524-ai/pojia-next
 
