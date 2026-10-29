@@ -1,5 +1,6 @@
 # 本地净化工具链，不发布
 *.pyc
+.workbuddy/
 __pycache__/
 _ad_poster.html
 _qq/
