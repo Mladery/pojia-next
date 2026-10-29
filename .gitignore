@@ -1,10 +1,13 @@
-__pycache__/
-*.pyc
-历史备份/
 # 本地净化工具链，不发布
+*.pyc
+__pycache__/
+_ad_poster.html
+_qq/
+c1.json
+c2.json
 clean.py
+commits.json
 decrypt_seal.py
 diag.py
 pojia.py
-commits.json
-_qq/
+历史备份/

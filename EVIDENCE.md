@@ -1,6 +1,6 @@
 # 证据链：上游 `pojia-next` 的「开源 → 撤源码 → 改口径 → 收费」时间线
 
-> 抓取方式：GitHub REST API `GET /repos/z91772524-ai/pojia-next/commits?per_page=100`，共 100 条提交，逐条落表。
+> 抓取方式：GitHub REST API `GET /repos/z91772524-ai/pojia-next/commits?per_page=100`，共 112 条提交，逐条落表。
 > 抓取时间：2026-10-29 23:20（UTC+8）。时间一律给北京时间（UTC+8），括号内为 API 原始 UTC 时间。
 > 仓库地址：https://github.com/z91772524-ai/pojia-next
 
@@ -41,7 +41,9 @@
 5. **曾经的「完全免费」承诺**：`a046a17`（2026-09-25）把「反圈钱提示」写进代码，执行破甲时提示「完全免费」；当前源码里仍有 `FREE_LINE` 常量在打印「完全免费开源 —— 若你是花钱买到的，请立即申请退款」。
 6. **成品侧的云端能力**：`16e3162`（云控 exec 内存执行）、`2150e02`（云验证）、`dea37cf`（盗版弹窗云配置）、`5de1894`（Cython 编译 pyd 防拆包）——这些提交说明成品已经从「本地脚本」变成「联网 + 服务端可下发 + 反调试」的闭源客户端。
 
-## 四、完整提交记录（100 条，倒序）
+7. **广告位是产品功能，不是群友自发**：仓库里 `_ad_coderelay/` 目录存着 `poster.html`（6,547 B）与 `poster.png`（130,955 B），海报文案是「CODE RELAY · API 中转站 · 一个中转站，33 个模型全接入」；提交 `fe4d983`（v8.6）原文「云端广告上线（服务器 `/pojia/ad` 下发 html+link，广告位整块点击跳系统浏览器）」，更早的 `735ffd5`（v8.6 UI 重写）已写明「广告位预留」。广告物料由维护者自己入库、由服务端下发到客户端。
+
+## 四、完整提交记录（112 条，倒序）
 
 | # | 北京时间 | 提交 | 提交信息 |
 |---|---|---|---|
@@ -145,6 +147,18 @@
 | 98 | 2026-09-18 13:24 | [`0f3f26c`](https://github.com/z91772524-ai/pojia-next/commit/0f3f26c31cdf5e4665af41072da65f2a5b622d31) | v7.3：安全审查透明化 —— README 贴关键代码 + bandit/semgrep CI + SHA256 校验清单 |
 | 99 | 2026-09-18 13:08 | [`34b5c84`](https://github.com/z91772524-ai/pojia-next/commit/34b5c841edd6beba4739190fad25438133187ddb) | 规范化：一键破甲.bat 按 .gitattributes 的 eol=crlf 落盘（线上已是 CRLF，本地工作区对齐；仍是纯 ASCII） |
 | 100 | 2026-09-18 13:04 | [`a5470c1`](https://github.com/z91772524-ai/pojia-next/commit/a5470c15a5dfacdd97b9b34037465e187af96a39) | v7.2：把升级链从头查一遍（独立验证抓出 5 个缺陷） |
+| 101 | 2026-09-18 12:45 | [`cadf505`](https://github.com/z91772524-ai/pojia-next/commit/cadf5052dcf8bdd55e44ded60b7dafef260732be) | v7.1：修掉「老版本升不上去」的死锁 + 新增 ZCode 目标 |
+| 102 | 2026-09-18 12:14 | [`b10d541`](https://github.com/z91772524-ai/pojia-next/commit/b10d541ace492e51dd9d3ee9a5507504f55771f3) | 同步：界面预览图更新为 v7.0 + pick 提示加说明 [skip ci] |
+| 103 | 2026-09-18 12:14 | [`057428a`](https://github.com/z91772524-ai/pojia-next/commit/057428ae7b17937e8748a20fc1f3d08665f254ac) | 更新界面预览图：v6.0 旧图（无 Codex）→ v7.0 三目标 + 体检 [skip ci] |
+| 104 | 2026-09-18 12:08 | [`1247839`](https://github.com/z91772524-ai/pojia-next/commit/1247839c85f995e5b9e31affbc6620a50b0de223) | v7.0：WorkBuddy 云记忆通道 + 作业规范块（学同类项目的注入思路） |
+| 105 | 2026-09-18 11:54 | [`c971e94`](https://github.com/z91772524-ai/pojia-next/commit/c971e94b540984be1d5475adaf9749cdbc27c2da) | v6.2：自证口令补齐到三个目标 + 修掉占位符字面量与 JSON 重复堆叠 |
+| 106 | 2026-09-18 11:24 | [`7ab3d7d`](https://github.com/z91772524-ai/pojia-next/commit/7ab3d7dca189e973e1a8a8a1070f60d7df2d0b26) | v6.1：三目标 + 装完可自证 + 只读体检 + 专属管理目录（回填 Codex） |
+| 107 | 2026-09-18 01:12 | [`55babf4`](https://github.com/z91772524-ai/pojia-next/commit/55babf46570143ed7d92e1097fab6c1d8ca19e1f) | 优化门面：README 首屏重写（5 枚徽章 + 界面预览图 + 6 条卖点）+ 仓库描述与 Topics 扩到 17 个 |
+| 108 | 2026-09-18 00:59 | [`742c6a6`](https://github.com/z91772524-ai/pojia-next/commit/742c6a63b09290fdb2a102757cc38ef2dc63e9f1) | 加入免责声明：GitHub 界面醒目展示 + 每次启动打印 |
+| 109 | 2026-09-18 00:52 | [`a9bf7b5`](https://github.com/z91772524-ai/pojia-next/commit/a9bf7b5701b0ec4b9414aa5188fd30c928345e31) | DSH/WorkBuddy 扫不到安装位置时改为 A/B 引导；主菜单去掉 [9] 指定安装目录 |
+| 110 | 2026-09-18 00:11 | [`e5d15d7`](https://github.com/z91772524-ai/pojia-next/commit/e5d15d795535e66337ecc2db77678221c2327787) | 移除 Codex 目标：脚本、文档、仓库元数据全部只保留 dsh + WorkBuddy |
+| 111 | 2026-09-17 20:52 | [`7318370`](https://github.com/z91772524-ai/pojia-next/commit/731837043f9626b02504deffb44dc1542ef9f262) | README 说明清楚：共同作者写在提交信息里（GitHub Contributors 列表只统计个人账号） |
+| 112 | 2026-09-17 20:49 | [`ba67d68`](https://github.com/z91772524-ai/pojia-next/commit/ba67d682de538ea07773cd80fc807c7fe043d4df) | 破甲一键通 v6.0：把五套破甲工具合并成一个脚本 |
 
 ---
 
