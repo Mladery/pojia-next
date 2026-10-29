@@ -85,7 +85,7 @@ Windows 下 `python` 已加入 PATH 时，双击 `.py` 即可。所有原始开�
 ## 五、校验
 
 ```
-6873c6c6b68a746945d65a04f59d187bdd8b838e8018d33be62177f0d3442bd6  src/破甲一键通.py           (324,586 B)
+21faa68f6bf93a2d157b0068777850199728fe9c83360d91aa076213a18f38f9  src/破甲一键通.py           (318,130 B / LF)
 f470a41ac51116fd12052f8c01eecf2d08c87c26100d3c26472134b7b22a73d0  upstream/破甲一键通.v8.14.py (351,393 B)
 ```
 
